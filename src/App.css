@@ -48,12 +48,13 @@ body {
 
 .box {
   margin: 40px;
-  background: rgba(217, 217, 217, 1);
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.18);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(217, 217, 217, 0.78);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 10px 20px;
 }
 
@@ -61,15 +62,16 @@ body {
   max-height: 140px; /* Adjust based on your needs */
   /* From https://css.glass */
   /* From https://css.glass */
-  background: rgba(217, 217, 217, 1);
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.18);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(217, 217, 217, 0.78);
-  padding: 5px 10px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   padding-top: 0;
   margin-bottom: 0;
+  padding: 10px;
 }
 .box-2 {
   margin-top: 25px;
@@ -87,16 +89,18 @@ body {
 }
 .column-2 img {
   max-height: 350px;
-  background: rgba(217, 217, 217, 1);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(217, 217, 217, 0.78);
   padding: 10px 20px;
   margin-bottom: 10;
   padding-bottom: 0;
   margin-left: 20px;
+  /* From https://css.glass */
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .box-2 img {
   text-align: center;
@@ -118,12 +122,13 @@ body {
   /* From https://css.glass */
   /* From https://css.glass */
   /* From https://css.glass */
-  background: rgba(217, 217, 217, 1);
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.18);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(217, 217, 217, 0.78);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 0;
 }
 .techstack {
@@ -283,4 +288,67 @@ a:hover {
   height: 100%;
   transition-delay: 0.4s;
   color: #ffedd3;
+}
+@media (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+  .header p,
+  .header img,
+  .header ul {
+    margin: 40px;
+  }
+
+  .column-1,
+  .column-2 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .box {
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  .box-3 {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .experience,
+  .projects {
+    flex-direction: column;
+  }
+
+  .projectdetails {
+    flex-direction: column;
+  }
+
+  .projectdescription {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .prostack {
+    flex-direction: column;
+  }
+
+  .linksof {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
 }

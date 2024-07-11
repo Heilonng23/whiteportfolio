@@ -31,7 +31,31 @@ const App = () => {
             <ul>
               <li>Software Engineer</li>
               <li>+ 1.5 years of experience</li>
-              <li>FreeCodeCamp, Hackerrank, and ZTM certified Web Developer</li>
+              <li>
+                <a
+                  style={{ textDecoration: "underline" }}
+                  href="https://www.freecodecamp.org/certification/heilong/javascript-algorithms-and-data-structures"
+                >
+                  FreeCodeCamp
+                </a>
+                ,{" "}
+                <a
+                  style={{ textDecoration: "underline" }}
+                  href="https://www.hackerrank.com/certificates/97381ba1ec07"
+                >
+                  Hackerrank
+                </a>
+                , and{" "}
+                <a
+                  style={{ textDecoration: "underline" }}
+                  href="https://drive.google.com/file/d/1N-DNmsiIqY6k7xNpCGBP62qgqvYNMTiE/view?usp=drive_link"
+                >
+                  ZTM certified Web Developer
+                </a>
+              </li>
+              <p style={{ marginTop: "0", fontSize: "12px" }}>
+                Click to see ⬆️
+              </p>
             </ul>
           </div>
           <div className="box box-2">
@@ -380,7 +404,7 @@ const App = () => {
                       alt={nodesvg}
                       style={{ height: "30px", verticalAlign: "middle" }}
                     />
-                    Next.js
+                    Node.js
                   </li>
                   <li>
                     <img
