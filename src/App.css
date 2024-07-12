@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto+Slab:wght@100..900&family=Ultra&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 :root {
   --ultra: "Ultra", serif;
   --worksans: "Work Sans", sans-serif;
   --karla: "Karla", serif;
+  --manrope: "Manrope", sans-serif;
 }
 
 body {
@@ -70,6 +71,7 @@ body {
   justify-content: space-between;
   max-width: 50%;
   max-height: 100px;
+  margin-right: 0;
 }
 
 .box {
@@ -112,13 +114,14 @@ body {
   justify-content: center;
   max-width: 50%;
   margin-top: 0;
+  margin-left: 0;
 }
 .column-2 img {
   max-height: 350px;
-  padding: 10px 20px;
+  padding: 5px 10px;
   margin-bottom: 10;
   padding-bottom: 0;
-  margin-left: 10px;
+  margin-left: 0px;
   /* From https://css.glass */
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.18);
@@ -204,8 +207,9 @@ body {
   margin-top: 0;
 }
 .projectheader {
-  font-family: "Roboto Slab", serif;
+  font-family: var(--manrope), serif;
   margin-bottom: 6px;
+  font-weight: 800;
 }
 .projectdetails {
   display: flex;
@@ -263,7 +267,8 @@ a:hover {
   position: relative;
   transition: 0.5s ease;
   cursor: pointer;
-  font-family: var(--karla);
+  font-weight: bold;
+  font-family: var(--manrope);
   margin: 4px 0;
   border-radius: 10px;
 }

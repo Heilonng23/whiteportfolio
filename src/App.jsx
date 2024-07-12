@@ -32,7 +32,11 @@ const App = () => {
             <img
               src={linkedin}
               alt=""
-              style={{ height: "30px", verticalAlign: "middle" }}
+              style={{
+                height: "30px",
+                verticalAlign: "middle",
+                fontWeight: "700",
+              }}
             />
             <a
               href="https://www.linkedin.com/in/ibragim-ibragimov-1b606024b/"
