@@ -10,9 +10,74 @@ import nodesvg from "./images/nodejs.svg";
 import resumeio from "./images/resumeio.png";
 import algorithm from "./images/12algor.png";
 import face from "./images/12face.png";
+import fictionheaven from "./images/fictionheaven.png";
+import oldportfolio from "./images/oldportfolio.png";
+import gmail from "./images/gmail.svg";
+import github from "./images/github.svg";
+import linkedin from "./images/linkedin.svg";
 const App = () => {
+  const handleClick = () => {
+    // Send message to you
+    // Replace 'your-email@example.com' with your actual email address
+    window.location.href = "mailto:your-email@example.com";
+  };
+
   return (
     <div className="container">
+      <div className="contact">
+        <p>Contact</p>
+        <ul className="contactlist">
+          <li>
+            {" "}
+            <img
+              src={linkedin}
+              alt=""
+              style={{ height: "30px", verticalAlign: "middle" }}
+            />
+            <a
+              href="https://www.linkedin.com/in/ibragim-ibragimov-1b606024b/"
+              style={{ textDecoration: "underline" }}
+              target="_blank"
+            >
+              Ibragim Ibragimov
+            </a>
+          </li>
+          <li>
+            {" "}
+            <img
+              src={github}
+              alt=""
+              style={{ height: "30px", verticalAlign: "middle" }}
+            />
+            <a
+              href="https://github.com/Heilonng23"
+              style={{ textDecoration: "underline" }}
+              target="_blank"
+            >
+              Heilonng23
+            </a>
+          </li>
+          <li>
+            <img
+              src={gmail}
+              alt=""
+              style={{ height: "30px", verticalAlign: "middle" }}
+            />
+            <button
+              onClick={handleClick}
+              style={{
+                background: "transparent",
+                border: "none",
+                fontSize: "16px",
+                textDecoration: "underline",
+              }}
+            >
+              ibrahimov.ibrahm@gmail.com
+            </button>
+          </li>
+        </ul>
+        {/* make contact section */}
+      </div>
       <div className="header">
         <div className="column column-1">
           <div className="box box-1">
@@ -35,6 +100,7 @@ const App = () => {
                 <a
                   style={{ textDecoration: "underline" }}
                   href="https://www.freecodecamp.org/certification/heilong/javascript-algorithms-and-data-structures"
+                  target="_blank"
                 >
                   FreeCodeCamp
                 </a>
@@ -42,6 +108,7 @@ const App = () => {
                 <a
                   style={{ textDecoration: "underline" }}
                   href="https://www.hackerrank.com/certificates/97381ba1ec07"
+                  target="_blank"
                 >
                   Hackerrank
                 </a>
@@ -49,13 +116,14 @@ const App = () => {
                 <a
                   style={{ textDecoration: "underline" }}
                   href="https://drive.google.com/file/d/1N-DNmsiIqY6k7xNpCGBP62qgqvYNMTiE/view?usp=drive_link"
+                  target="_blank"
                 >
                   ZTM certified Web Developer
                 </a>
               </li>
               <p style={{ marginTop: "0", fontSize: "12px" }}>
                 Click to see ⬆️
-              </p>
+              </p>{" "}
             </ul>
           </div>
           <div className="box box-2">
@@ -271,6 +339,79 @@ const App = () => {
           <div className="project">
             <div className="projectdetails">
               <div>
+                <p className="projectheader">Fiction Heaven</p>
+                <img
+                  src={fictionheaven}
+                  alt=""
+                  className="projectimage"
+                  style={{ maxWidth: "320px", minHeight: "230px" }}
+                />
+              </div>
+              <div className="projectdescription">
+                <p className="projecttext">
+                  Fiction Heaven is a web application that helps you to track
+                  the movies and tv shows you have watched. You can also rate
+                  them, track the movies and tv shows.
+                  <div className="linksof">
+                    <button className="btn">
+                      <a
+                        href="https://fictionheaven-cfgx237k7-heilonng23s-projects.vercel.app/"
+                        target="_blank"
+                      >
+                        Live Demo
+                      </a>
+                    </button>
+                    <button className="btn">
+                      <a
+                        href="https://github.com/Heilonng23/fictionheavencom"
+                        target="_blank"
+                      >
+                        Source Code
+                      </a>
+                    </button>{" "}
+                  </div>
+                </p>
+                <p style={{ marginBottom: "8px" }}>Tech stack</p>
+                <ul className="prostack">
+                  <li>
+                    <img
+                      src={reactsvg}
+                      alt={reactsvg}
+                      style={{ height: "30px", verticalAlign: "middle" }}
+                    />
+                    React
+                  </li>
+                  <li>
+                    <img
+                      src={tailwindcsssvg}
+                      alt={tailwindcsssvg}
+                      style={{ height: "30px", verticalAlign: "middle" }}
+                    />
+                    Tailwind CSS
+                  </li>
+                  <li>
+                    <img
+                      src={nextjssvg}
+                      alt={nextjssvg}
+                      style={{ height: "30px", verticalAlign: "middle" }}
+                    />
+                    Next.js
+                  </li>
+                  <li>
+                    <img
+                      src={typescriptsvg}
+                      alt={typescriptsvg}
+                      style={{ height: "30px", verticalAlign: "middle" }}
+                    />
+                    TypeScript
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="project">
+            <div className="projectdetails">
+              <div>
                 <p className="projectheader">Algorithm Visualization</p>
                 <img
                   src={algorithm}
@@ -421,6 +562,77 @@ const App = () => {
                       style={{ height: "30px", verticalAlign: "middle" }}
                     />
                     PostgreSQL
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="project">
+            <div className="projectdetails">
+              <div>
+                <p className="projectheader">Modern Portfolio</p>
+                <img
+                  src={oldportfolio}
+                  alt=""
+                  className="projectimage"
+                  style={{ maxWidth: "320px", minHeight: "230px" }}
+                />
+              </div>
+              <div className="projectdescription">
+                <p className="projecttext">
+                  Modern Portfolio is the old version of my portfolio website.
+                  <div className="linksof">
+                    <button className="btn">
+                      <a
+                        href="https://ibra-port-rd33j1q1y-heilonng23s-projects.vercel.app/"
+                        target="_blank"
+                      >
+                        Live Demo
+                      </a>
+                    </button>
+                    <button className="btn">
+                      <a
+                        href="https://ibra-port-rd33j1q1y-heilonng23s-projects.vercel.app/"
+                        target="_blank"
+                      >
+                        Source Code
+                      </a>
+                    </button>{" "}
+                  </div>
+                </p>
+                <p style={{ marginBottom: "8px" }}>Tech stack</p>
+                <ul className="prostack">
+                  <li>
+                    <img
+                      src={reactsvg}
+                      alt={reactsvg}
+                      style={{ height: "30px", verticalAlign: "middle" }}
+                    />
+                    React
+                  </li>
+                  <li>
+                    <img
+                      src={tailwindcsssvg}
+                      alt={tailwindcsssvg}
+                      style={{ height: "30px", verticalAlign: "middle" }}
+                    />
+                    Tailwind CSS
+                  </li>
+                  <li>
+                    <img
+                      src={nextjssvg}
+                      alt={nextjssvg}
+                      style={{ height: "30px", verticalAlign: "middle" }}
+                    />
+                    Next.js
+                  </li>
+                  <li>
+                    <img
+                      src={typescriptsvg}
+                      alt={typescriptsvg}
+                      style={{ height: "30px", verticalAlign: "middle" }}
+                    />
+                    TypeScript
                   </li>
                 </ul>
               </div>
